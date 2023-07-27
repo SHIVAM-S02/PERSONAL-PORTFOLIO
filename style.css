@@ -1,0 +1,260 @@
+/* Reset some default styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Set background image */
+body {
+  margin: 0;
+  padding: 0;
+  background: url("background.webp") no-repeat center/cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* Header styles */
+header {
+  background-color: #33B3A6;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-icons {
+  font-size: 24px;
+}
+
+.header-icons a {
+  margin-right: 10px;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.header-icons a:hover {
+  color: #ddd;
+}
+
+.social-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 5px;
+  transition: color 0.3s ease;
+}
+
+/* Social media icons styles */
+.social-links a i {
+  font-size: 24px;
+}
+
+.social-links a:hover {
+  color: #ddd;
+}
+
+/* Customize each social media icon */
+.social-links a.instagram i {
+  color: #C13584; /* Instagram pink */
+}
+
+.social-links a.telegram i {
+  color: #0088CC; /* Telegram blue */
+}
+
+.social-links a.facebook i {
+  color: #3B5998; /* Facebook blue */
+}
+
+.social-links a.linkedin i {
+  color: #0E76A8; /* LinkedIn blue */
+}
+
+.social-links a.github i {
+  color: #fff; /* GitHub white */
+}
+
+/* Additional Styles */
+.home:hover {
+  color: #fff;
+}
+
+.contact:hover {
+  color: #fff;
+}
+
+.about:hover {
+  color: #fff;
+}
+
+
+/* Content styles */
+.content {
+  /* display: flex; */
+  /* justify-content: space-between; */
+  align-items: center;
+  min-height: 400px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.left-section {
+  text-align: center;
+  
+}
+
+/* .right-section {
+  text-align: center;
+} */
+
+.round-photo {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+main {
+  margin: 20px;
+}
+
+h1, h2{
+  color: #333;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.profile-photo {
+  border-radius: 80%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 5px;
+}
+
+h3{
+  color: #e9eced;
+}
+
+h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.contact-button {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.contact-me-button {
+  background-color: #fff;
+  color: #333;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.contact-me-button:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.footer-quote {
+  font-style: italic;
+  margin: 10px 0;
+}
+
+.footer-social {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.footer-social li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer-social li a {
+  text-decoration: none;
+  color: #ddd;
+  transition: color 0.3s ease;
+}
+
+.footer-social li a:hover {
+  color: #fff;
+}
+
+p {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* ******************************************************************* */
+/* DOWNLOAD BUTTON */
+
+/* Customize the Download CV button */
+.download-button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  background-color: #4ae3e0; /* Green color for the button */
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.download-button:hover {
+  background-color: #579cce; /* Darker green when hovered */
+}
+
+.download-button:active {
+  background-color: #3f91d9; /* Even darker green when active (clicked) */
+}
+
+/* Icon before the button text */
+.download-button::before {
+  content: "\f019"; /* Unicode for the download icon from Font Awesome */
+  font-family: "Font Awesome 5 Free"; /* Make sure to include the correct Font Awesome font family */
+  margin-right: 10px;
+}
+
+/* Make the button responsive for smaller screens */
+@media (max-width: 768px) {
+  .download-button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
